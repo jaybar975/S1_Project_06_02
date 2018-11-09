@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Justin Aybar
+   Date: 11.6.18  
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+/* This sets the body element to a box shadow of red blue green to 51, 51, 51 and 10 pixels, 10 pixels, 50 pixels. */
+body {
+    box-shadow: rgb(51, 51, 51) 10px 10px 50px;
+}
+
+
+
+/* Navigation Tabs List Styles */
+
+/* This sets the body element with the direct child of the header element with the nav element that has a class of tabs with a background of a url to file of sf_back1.png to the center of the navigation tab with 100 percent, no repeat, and content box. */
+body>header nav.tabs {
+    background: url(sf_back1.png) center 100% no-repeat content-box;
+}
+
+
+/* This sets the body element with the direct child of the header element with the nav element that has a class of tabs with a background of a url to file of sf_back1.png to the center of the navigation tab with 100 percent, no repeat, and content box. */
+body>header nav.tabs {
+    background-image: url(sf_back1.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+}
+
+/* This sets the body element with a direct child of the header element the nav has a class of tabs with the li element with a tranform of perspective set to 50 pixels and the rotate X is set to 20 degrees. */
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+}
+
+/* This sets the body element with a direct child of the header element. the nav element has a class named tabs with the li element. hypertext link element has a pseudo class named hover with a background of red blue green set to 231, 231, 231. */
+body>header nav.tabs li a:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+
+/* Left Section Styles */
+/* This sets the section element with an id of left and with another navigation element with a class named vertical with a border of 1 pixel, solid, red blue green is set to 20, 167, 170 with a border radius of 25 pixels, 25 pixels, 0 pixels, and 0 pixels.  */
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
+
+/* This sets the section element with a id named left and another navigation element with a class called vertical with the heading 1 element with a border of 1 pixel, solid, red blue green is set to 20, 167, 170 with a border radius of 25 pixels, 25 pixels, 0 pixels, and 0 pixels. */
+section#left nav.vertical h1 {
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+/* Center Article Styles */
+/* This sets the section element with a id of center and the artile element is set to a background of radial gradiant set to the color white, red blue green is set to 151, 151, 151 and It's set to 30% with a border of 1 pixel, solid, red blue green is set to 151, 151, 151 with a border radius of 50 pixels and a box shadow set to 10 pixels, 20 pixels, 50 pixels and is set to the color gray. */
+section#center article {
+    background: radial-gradient(white 30%, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 50px;
+    box-shadow: 10px 20px 50px gray;
+}
+
+
+/* Blockquote Styles */
+/* This sets the block quote element with a background image of a url to a file name called sf_sppech.png with a background size of 100 percent and 100 percent with a background repeat of no repeat with a background orgin of content box and finally a fiter of box shadow is set to 5 pixels, 5 pixels, and 10 pixels with a red blue green set to 51, 51, 51. */
+blockquote {
+    background-image: url(sf_speech.png);
+    background-size: 100%;
+    background-repeat: round;
+    -webkit-filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+    filter: drop-shadow(5px 5px 10px);
+}
+
+/* This sets the cite element with a image element to a border radius od 50 percent. */
+cite img {
+    border-radius: 50%;
+}
